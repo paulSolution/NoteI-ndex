@@ -1,0 +1,25 @@
+﻿<UserControl x:Class="Note_Index.ExitCnfrm"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Note_Index"
+             mc:Ignorable="d" x:Name="ExitWnd" Focusable="True"
+             d:DesignHeight="700" d:DesignWidth="700" Background="#55000000" Loaded="ExitWnd_Loaded">
+    <Grid x:Name="mnGrid" KeyDown="ExitWnd_KeyDown" Focusable="True" FocusVisualStyle="{x:Null}">
+        <Border BorderBrush="#FF00B1B9" Background="#434343" BorderThickness="1.5" Height="151" Width="300" CornerRadius="7">
+            <Grid>
+                <TextBlock Text="Are You Sure ?"  Foreground="Wheat" Margin="0,-40,0,0" VerticalAlignment="Center"
+                           FontFamily="Calibri" FontSize="15" FontWeight="SemiBold"  HorizontalAlignment="Center"
+                           FontStyle="Italic"/>
+
+                <TextBlock Text="Yes" Foreground="IndianRed" Margin="0,60,100,0" VerticalAlignment="Center"
+                           FontFamily="Calibri" FontSize="15" FontWeight="SemiBold"  HorizontalAlignment="Center"
+                           FontStyle="Italic"/>
+                <TextBlock Text="No" Foreground="IndianRed" VerticalAlignment="Center" HorizontalAlignment="Center"
+                           Margin="100,60,0,0" FontStyle="Italic" FontSize="15" FontFamily="Calibri" FontWeight="SemiBold"/>
+            </Grid>
+        </Border>
+        
+    </Grid>
+</UserControl>

@@ -1,0 +1,77 @@
+﻿<UserControl x:Class="Note_Index.HstryWnd"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Note_Index"
+             mc:Ignorable="d" Focusable="True"
+             d:DesignHeight="700" d:DesignWidth="700">
+    <UserControl.Resources>
+        <Style x:Key="TxtStyl" TargetType="TextBlock">
+            <Setter Property="Foreground" Value="White"/>
+            <Setter Property="FontSize" Value="30"/>
+            <Setter Property="FontFamily" Value="Global User Interface"/>
+            <Setter Property="FontWeight" Value="SemiBold"/>
+            <Setter Property="TextAlignment" Value="Left"/>
+        </Style>
+        
+        
+    </UserControl.Resources>
+    <Grid Background="#55000000">
+
+        <Border BorderBrush="IndianRed" BorderThickness="1.5" 
+                VerticalAlignment="Center" Width="520"
+                HorizontalAlignment="Center" Height="400" 
+                Background="#232323" CornerRadius="18">
+            <WrapPanel VerticalAlignment="Top">
+                <Grid Width="490" Margin="10" VerticalAlignment="Center">
+                    <TextBlock Text="Date: 22-June-2021       Time - 11:30:34 PM"
+                               FontSize="20" VerticalAlignment="Center" HorizontalAlignment="Right"
+                               Foreground="#FFD6FF4D" x:Name="WndTitle"
+                               Style="{DynamicResource TxtStyl}"/>
+                </Grid>
+                
+                <StackPanel Margin="30,2,0,0" Orientation="Vertical">
+                    <TextBlock Text="2000  X" TextAlignment="Right" Style="{DynamicResource TxtStyl}"/>
+                    <TextBlock Text="500  X"  TextAlignment="Right" Style="{DynamicResource TxtStyl}"/>
+                    <TextBlock Text="200  X"  TextAlignment="Right" Style="{DynamicResource TxtStyl}"/>
+                    <TextBlock Text="100  X"  TextAlignment="Right" Style="{DynamicResource TxtStyl}"/>
+                    <TextBlock Text="50  X"   TextAlignment="Right" Style="{DynamicResource TxtStyl}"/>
+                    <TextBlock Text="20  X"   TextAlignment="Right" Style="{DynamicResource TxtStyl}"/>
+                    <TextBlock Text="10  X"   TextAlignment="Right" Style="{DynamicResource TxtStyl}"/>
+                    <TextBlock Text="Coin  X" TextAlignment="Right" Style="{DynamicResource TxtStyl}"/>
+                </StackPanel>
+
+                <StackPanel Margin="15,2,0,0">
+                    <TextBlock x:Name="t2000" Text="" Style="{DynamicResource TxtStyl}"/>
+                    <TextBlock x:Name="t500" Text="" Style="{DynamicResource TxtStyl}"/>
+                    <TextBlock x:Name="t200" Text="" Style="{DynamicResource TxtStyl}"/>
+                    <TextBlock x:Name="t100" Text="" Style="{DynamicResource TxtStyl}"/>
+                    <TextBlock x:Name="t50" Text="" Style="{DynamicResource TxtStyl}"/>
+                    <TextBlock x:Name="t20" Text="" Style="{DynamicResource TxtStyl}"/>
+                    <TextBlock x:Name="t10" Text="" Style="{DynamicResource TxtStyl}"/>
+                    <TextBlock x:Name="tCoin" Text=" " Style="{DynamicResource TxtStyl}"/>
+                </StackPanel>
+
+                <StackPanel Margin="15,2,0,0">
+                    <TextBlock x:Name="r2000" Text="=  " Style="{DynamicResource TxtStyl}"/>
+                    <TextBlock x:Name="r500" Text="=  " Style="{DynamicResource TxtStyl}"/>
+                    <TextBlock x:Name="r200" Text="=  " Style="{DynamicResource TxtStyl}"/>
+                    <TextBlock x:Name="r100" Text="=  " Style="{DynamicResource TxtStyl}"/>
+                    <TextBlock x:Name="r50" Text="=  " Style="{DynamicResource TxtStyl}"/>
+                    <TextBlock x:Name="r20" Text="=  " Style="{DynamicResource TxtStyl}"/>
+                    <TextBlock x:Name="r10" Text="=  " Style="{DynamicResource TxtStyl}"/>
+                    <TextBlock x:Name="rCoin" Text="=  " Style="{DynamicResource TxtStyl}"/>
+                </StackPanel>
+
+                <Border Height="5" Width="350" BorderBrush="White" Margin="150,5,0,0"
+                           BorderThickness="0,1,0,1"/>
+                <TextBlock x:Name="ResultTB" Text="Total =  1,55,725" Width="350"
+                           Style="{DynamicResource TxtStyl}" Margin="152,5,0,0"/>
+
+            </WrapPanel>
+        </Border>
+
+
+    </Grid>
+</UserControl>
